@@ -3,65 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Across - The Safer Middle</title>
+  <title>Across - The Secure Way to Transact Online</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom gradient for hero section */
+    .hero-gradient {
+      background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="font-sans text-gray-800">
   <!-- Header -->
-  <header class="bg-white shadow">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-blue-600">ACROSS</div>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="text-gray-600 hover:text-blue-600">Home</a></li>
-        <li><a href="#features" class="text-gray-600 hover:text-blue-600">Features</a></li>
-        <li><a href="#about" class="text-gray-600 hover:text-blue-600">About</a></li>
-        <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a></li>
-      </ul>
+  <header class="bg-gray-900 text-white py-4 sticky top-0 z-10">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">A</div>
+        <span class="text-xl font-bold">Across</span>
+      </div>
+      <!-- Navigation -->
+      <div class="flex items-center space-x-4 sm:space-x-6 mt-2 sm:mt-0">
+        <a href="#solutions" class="text-gray-300 hover:text-white text-sm sm:text-base">Solutions</a>
+        <a href="#pricing" class="text-gray-300 hover:text-white text-sm sm:text-base">Pricing</a>
+        <a href="#about" class="text-gray-300 hover:text-white text-sm sm:text-base">About</a>
+        <!-- Buttons -->
+        <a href="#signup" class="text-gray-300 hover:text-white text-sm sm:text-base">Sign Up</a>
+        <a href="#login" class="bg-gray-800 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md hover:bg-gray-700 text-sm sm:text-base">Login</a>
+      </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-blue-600 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">The Safer Middle</h1>
-      <p class="text-lg md:text-xl mb-6">Secure escrow services for small businesses and peer-to-peer transactions.</p>
-      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Get Started</a>
+  <section class="hero-gradient text-white py-16 sm:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Logo and Tagline -->
+      <div class="flex flex-col items-center mb-6">
+        <div class="relative w-32 h-32 sm:w-40 sm:h-40">
+          <div class="absolute inset-0 border-2 border-white rounded-full"></div>
+          <div class="absolute inset-4 border-2 border-white rounded-full"></div>
+          <div class="absolute inset-8 border-2 border-white rounded-full"></div>
+          <span class="absolute inset-0 flex items-center justify-center text-2xl sm:text-3xl font-bold">Across</span>
+        </div>
+        <p class="mt-2 text-sm sm:text-base opacity-80">Secure Transactions Always</p>
+      </div>
+      <!-- Heading and Subheading -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">The secure way to<br>transact online</h1>
+      <p class="text-base sm:text-lg lg:text-xl mb-8 max-w-2xl mx-auto">Escrow made simple. Across protects buyers and sellers with safe, reliable transactions.</p>
+      <!-- CTA Button -->
+      <a href="#get-started" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 text-sm sm:text-base">Get Started</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Choose Across?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Secure Payments</h3>
-          <p class="text-gray-600">Funds are held safely until both parties fulfill their obligations.</p>
+  <!-- How It Works Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-y-0 sm:space-x-4">
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10h6m-6-10h6M5 12h14"></path></svg>
+          </div>
+          <p class="text-sm sm:text-base font-medium">Create an escrow transaction</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Dispute Resolution</h3>
-          <p class="text-gray-600">Our team mediates to ensure fair outcomes for all transactions.</p>
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v2h6v-2c0-1.657-1.343-3-3-3zM9 11V9a3 3 0 016 0v2"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11h14v10H5z"></path></svg>
+          </div>
+          <p class="text-sm sm:text-base font-medium">Fund the escrow account</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
-          <p class="text-gray-600">Seamless setup for small businesses and individuals.</p>
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          </div>
+          <p class="text-sm sm:text-base font-medium">Complete the transaction</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l-9-5v6l9 5 9-5v-6l-9 5z"></path></svg>
+          </div>
+          <p class="text-sm sm:text-base font-medium">Release payment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Solutions for Secure Payments</h2>
+      <p class="text-base sm:text-lg max-w-2xl mx-auto">Whether you’re an individual or a business, our escrow solution are tailored to meet your needs.</p>
+    </div>
+  </section>
+
+  <!-- Why Choose Across Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Why Choose Across?</h2>
+      <div class="flex flex-col sm:flex-row justify-between space-y-8 sm:space-y-0 sm:space-x-4">
+        <!-- Benefit 1 -->
+        <div class="flex-1 text-center">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Safe & Reliable</h3>
+          <p class="text-sm sm:text-base text-gray-600">Trusted escrow services ensuring peace of mind</p>
+        </div>
+        <!-- Benefit 2 -->
+        <div class="flex-1 text-center">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Transparent Process</h3>
+          <p class="text-sm sm:text-base text-gray-600">Clear, easy-to-understand steps with constant updates</p>
+        </div>
+        <!-- Benefit 3 -->
+        <div class="flex-1 text-center">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Dedicated Support</h3>
+          <p class="text-sm sm:text-base text-gray-600">Our team is here to assist you whenever you need help</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 ACROSS. All rights reserved.</p>
-      <div class="mt-4">
-        <a href="#privacy" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
-        <a href="#terms" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
-      </div>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm sm:text-base">© 2025 Across. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
