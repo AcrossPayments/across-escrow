@@ -27,7 +27,7 @@
     rgba(255, 0, 242, 0.95) 100% /* Loop back to start */
   );
   background-size: 200% 200%; /* Compact size to keep three colors visible */
-  animation: gradient-animation 30s cubic-bezier(0.45, 0, 0.55, 1) infinite; /* Fluid, premium timing */
+  animation: gradient-animation 15s cubic-bezier(0.45, 0, 0.55, 1) infinite; /* Fluid, premium timing */
   overflow: hidden;
 }
 
