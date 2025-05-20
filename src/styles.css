@@ -19,11 +19,12 @@
   background: linear-gradient(
     135deg,
     rgba(255, 0, 242, 0.95) 0%, /* #4b0082 - Royal purple */
-    rgba(164, 7, 255, 0.9) 20%, /* #2e1a47 - Dark amethyst */
+    rgba(97, 0, 241, 0.9) 20%, /* #2e1a47 - Dark amethyst */
     rgba(18, 92, 211, 0.85) 40%, /* #5b21b6 - Rich indigo */
-    rgba(0, 48, 135, 0.9) 60%, /* #003087 - Deep navy */
-    rgba(4, 116, 168, 0.85) 80%, /* #0474a8 - Ocean blue */
-    rgba(30, 169, 255, 0.95) 100% /* #4b0082 - Royal purple */
+    rgba(4, 116, 168, 0.85) 60%, /* #0474a8 - Ocean blue */
+    rgba(96, 12, 174, 0.95) 80%, /* #4b0082 - Royal purple */
+    rgba(164, 7, 255, 0.9) 90%, /* #2e1a47 - Dark amethyst */
+    rgba(255, 0, 242, 0.95) 100% /* Loop back to start */
   );
   background-size: 200% 200%; /* Compact size to keep three colors visible */
   animation: gradient-animation 30s cubic-bezier(0.45, 0, 0.55, 1) infinite; /* Fluid, premium timing */
