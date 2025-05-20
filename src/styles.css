@@ -1,6 +1,53 @@
 /* Custom gradient for hero section */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+    transform: scale(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.02);
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1);
+  }
+}
+
 .hero-gradient {
-  background: linear-gradient(90deg, #aa00c8 0%, #4103a5 50%, #0081bd 100%);
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 242, 0.95) 0%, /* #4b0082 - Royal purple */
+    rgba(164, 7, 255, 0.9) 20%, /* #2e1a47 - Dark amethyst */
+    rgba(18, 92, 211, 0.85) 40%, /* #5b21b6 - Rich indigo */
+    rgba(0, 48, 135, 0.9) 60%, /* #003087 - Deep navy */
+    rgba(4, 116, 168, 0.85) 80%, /* #0474a8 - Ocean blue */
+    rgba(30, 169, 255, 0.95) 100% /* #4b0082 - Royal purple */
+  );
+  background-size: 200% 200%; /* Compact size to keep three colors visible */
+  animation: gradient-animation 30s cubic-bezier(0.45, 0, 0.55, 1) infinite; /* Fluid, premium timing */
+  overflow: hidden;
+}
+
+/* Pseudo-element for shimmer effect */
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%, /* Bright shimmer for vibrancy */
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 15s cubic-bezier(0.45, 0, 0.55, 1) infinite reverse; /* Faster shimmer in reverse */
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 @font-face {
@@ -18,6 +65,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
@@ -25,6 +73,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Bold.woff2') format('woff2');
@@ -46,4 +95,43 @@ h1, h2, h3, h4, h5, h6 {
 nav, .nav, button, .btn, .font-medium {
   font-family: 'Avenir Next Variable Pro Roman', 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: 400; /* Set nav and buttons to non-bold */
+}
+
+@keyframes fadeInUponLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUponLoad {
+  animation: fadeInUponLoad 0.8s ease-out forwards;
+}
+
+/* Animation for How It Works steps on scroll */
+.how-it-works-step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.how-it-works-step.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* General scroll-triggered animation */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px); /* Slightly larger slide distance */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Slower and smoother transition */
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

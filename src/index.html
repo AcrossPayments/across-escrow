@@ -25,7 +25,7 @@
   <section class="hero-gradient text-white py-16 sm:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <!-- Logo and Tagline -->
-      <div class="flex flex-col items-center mb-6">
+      <div class="flex flex-col items-center mb-6 animate-fadeInUponLoad" style="animation-delay: 0.2s;">
         <div class="relative w-96 h-96 flex items-center justify-center mx-auto">
           <img src="images/logo.png" alt="Across Logo" class="absolute inset-0 w-full h-full object-contain" />
           <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -35,10 +35,10 @@
         </div>
       </div>
       <!-- Heading and Subheading -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium mb-4 leading-tight">The Secure Way To Transact Online</h1>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium mb-4 leading-tight animate-fadeInUponLoad" style="animation-delay: 0.4s;">The Secure Way To Transact Online</h1>
       <br>
       <br>
-      <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">Escrow made simple. <br> <br> Across protects buyers and sellers with safe, reliable transactions.</p>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-fadeInUponLoad" style="animation-delay: 0.6s;">Escrow made simple. <br> <br> Across protects buyers and sellers with safe, reliable transactions.</p>
     </div>
   </section>
 
@@ -48,7 +48,7 @@
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-16">How It Works</h2>
       <div class="flex flex-col sm:flex-row justify-center items-start gap-y-16 gap-x-2 max-w-6xl mx-auto">
         <!-- Step 1 -->
-        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#222" class="w-12 h-12 mb-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 9.5l2.25 2.25a2.121 2.121 0 010 3l-3 3a2.121 2.121 0 01-3 0l-2.25-2.25m6-6l-2.25-2.25a2.121 2.121 0 00-3 0l-3 3a2.121 2.121 0 000 3l2.25 2.25m6-6l-6 6" />
           </svg>
@@ -58,7 +58,7 @@
         <!-- Arrow 1 -->
         <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 2 -->
-        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <img src="images/fund.png" alt="Fund the Escrow Account" class="w-12 h-12 mb-6 object-contain" />
           <p class="text-xl font-semibold mb-2 text-center">Fund the Escrow Account</p>
           <p class="text-sm text-gray-500 text-center">Buyer deposits the agreed amount into the secure escrow account.</p>
@@ -66,7 +66,7 @@
         <!-- Arrow 2 -->
         <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 3 -->
-        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <img src="images/goods.png" alt="Deliver Goods or Services" class="w-12 h-12 mb-6 object-contain" />
           <p class="text-xl font-semibold mb-2 text-center">Deliver Goods or Services</p>
           <p class="text-sm text-gray-500 text-center">Seller fulfills their part by delivering the product or service.</p>
@@ -74,7 +74,7 @@
         <!-- Arrow 3 -->
         <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 4 -->
-        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <img src="images/complete.png" alt="Complete the Transaction" class="w-12 h-12 mb-6 object-contain" />
           <p class="text-xl font-semibold mb-2 text-center">Complete the Transaction</p>
           <p class="text-sm text-gray-500 text-center">Buyer reviews and confirms that everything meets the agreed terms.</p>
@@ -82,7 +82,7 @@
         <!-- Arrow 4 -->
         <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-2 self-center" />
         <!-- Step 5 -->
-        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <img src="images/payment.svg" alt="Release Payment" class="w-12 h-12 mb-6 object-contain" />
           <p class="text-xl font-semibold mb-2 text-center">Release Payment</p>
           <p class="text-sm text-gray-500 text-center">Funds are released to the seller once the buyer approves the delivery.</p>
@@ -92,7 +92,7 @@
   </section>
 
   <!-- Solutions & Coming Soon Section -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 bg-gray-50 scroll-reveal">
     <div class="container mx-auto px-4 sm:px-6 lg:px-32 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6">Solutions for Secure Payments</h2>
       <p class="text-xl text-gray-700 mb-6 max-w-6xl mx-auto">
@@ -108,7 +108,7 @@
   </section>
 
   <!-- Why Choose Across Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-white scroll-reveal">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Why Choose Across?</h2>
       <div class="flex flex-col sm:flex-row justify-between space-y-8 sm:space-y-0 sm:space-x-4">
@@ -139,10 +139,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-sm sm:text-base">© 2025 Across. All rights reserved.</p>
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Across Escrow. All rights reserved.</p>
     </div>
   </footer>
 
