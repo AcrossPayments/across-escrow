@@ -2,51 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a0f2c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Across - The Secure Way to Transact Online</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 overflow-x-hidden">
   <!-- Header -->
   <header class="bg-gray-900 text-white py-4 sticky top-0 z-10">
     <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
       <!-- Nav bar -->
       <div class="flex items-center space-x-4">
-        <button class="flex items-center space-x-2 focus:outline-none" id="dropdownButton">
+        <button class="flex items-center space-x-2 focus:outline-none touch-manipulation" id="dropdownButton">
           <span class="text-xl font-bold">Across</span>
         </button>
-        <a href="contact.html" class="text-xl font-bold text-gray-300 hover:text-white">Contact Us</a>
+        <a href="contact.html" class="text-xl font-bold text-gray-300 hover:text-white touch-manipulation">Contact Us</a>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-gradient text-white py-16 sm:py-24">
+  <section class="hero-gradient text-white py-12 sm:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <!-- Logo and Tagline -->
       <div class="flex flex-col items-center mb-6 animate-fadeInUponLoad" style="animation-delay: 0.2s;">
-        <div class="relative w-96 h-96 flex items-center justify-center mx-auto">
+        <div class="relative w-64 h-64 sm:w-96 sm:h-96 flex items-center justify-center mx-auto">
           <img src="images/logo.png" alt="Across Logo" class="absolute inset-0 w-full h-full object-contain" />
           <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <span class="text-6xl sm:text-7xl font-thin">Across</span>
-            <span class="mt-4 text-base sm:text-xl opacity-90">The Safer Middle</span>
+            <span class="text-4xl sm:text-6xl lg:text-7xl font-thin">Across</span>
+            <span class="mt-2 sm:mt-4 text-sm sm:text-base lg:text-lg opacity-90">The Safer Middle</span>
           </div>
         </div>
       </div>
       <!-- Heading and Subheading -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium mb-4 leading-tight animate-fadeInUponLoad" style="animation-delay: 0.4s;">The Secure Way To Transact Online</h1>
+      <h1 class="text-2xl sm:text-5xl lg:text-6xl font-medium mb-4 leading-tight animate-fadeInUponLoad px-4" style="animation-delay: 0.4s;">The Secure Way To Transact Online</h1>
       <br>
       <br>
-      <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-fadeInUponLoad" style="animation-delay: 0.6s;">Escrow made simple. <br> <br> Across protects buyers and sellers with safe, reliable transactions.</p>
+      <p class="text-base sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-fadeInUponLoad px-4" style="animation-delay: 0.6s;">Escrow made simple. <br> <br> Across protects buyers and sellers with safe, reliable transactions.</p>
     </div>
   </section>
 
   <!-- How It Works Section -->
-  <section class="py-20 bg-white">
+  <section class="py-12 sm:py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-16">How It Works</h2>
-      <div class="flex flex-col sm:flex-row justify-center items-start gap-y-16 gap-x-2 max-w-6xl mx-auto">
+      <h2 class="text-xl sm:text-3xl font-bold text-center mb-12 sm:mb-16">How It Works</h2>
+      <div class="flex flex-col sm:flex-row justify-center items-start gap-y-12 sm:gap-y-16 gap-x-2 max-w-6xl mx-auto">
         <!-- Step 1 -->
         <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8 how-it-works-step">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#222" class="w-12 h-12 mb-6">
@@ -92,26 +95,26 @@
   </section>
 
   <!-- Solutions & Coming Soon Section -->
-  <section class="py-20 bg-gray-50 scroll-reveal">
+  <section class="py-12 sm:py-20 bg-gray-50 scroll-reveal">
     <div class="container mx-auto px-4 sm:px-6 lg:px-32 text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Solutions for Secure Payments</h2>
-      <p class="text-xl text-gray-700 mb-6 max-w-6xl mx-auto">
+      <h2 class="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">Solutions for Secure Payments</h2>
+      <p class="text-lg sm:text-xl text-gray-700 mb-4 sm:mb-6 max-w-6xl mx-auto px-4">
         Whether you're an individual, business, or platform, our escrow solutions are tailored to meet your needs—offering secure, seamless transactions across a variety of use cases. We also support peer-to-peer exchanges, ensuring trust and safety for all parties involved.
       </p>
-      <p class="text-lg text-gray-600 mb-6 max-w-6xl mx-auto">
+      <p class="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 max-w-6xl mx-auto px-4">
         <span class="font-semibold">Coming Soon:</span> Enhanced features and integrations to make your transactions even safer and more convenient.
       </p>
-      <p class="text-lg text-gray-600 max-w-6xl mx-auto">
+      <p class="text-base sm:text-lg text-gray-600 max-w-6xl mx-auto px-4">
         Want to incorporate our escrow services into your own platform or business? <span class="font-semibold">Inquire with us</span> to discuss custom integrations and partnerships.
       </p>
     </div>
   </section>
 
   <!-- Why Choose Across Section -->
-  <section class="py-16 bg-white scroll-reveal">
+  <section class="py-12 sm:py-16 bg-white scroll-reveal">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Why Choose Across?</h2>
-      <div class="flex flex-col sm:flex-row justify-between space-y-8 sm:space-y-0 sm:space-x-4">
+      <h2 class="text-xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Why Choose Across?</h2>
+      <div class="flex flex-col sm:flex-row justify-between space-y-6 sm:space-y-0 sm:space-x-4">
         <!-- Benefit 1 -->
         <div class="flex-1 text-center">
           <h3 class="text-lg sm:text-xl font-semibold mb-2">Safe & Reliable</h3>
@@ -132,20 +135,19 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-12 sm:py-16 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Contact Us</h2>
-      <p class="text-base sm:text-lg max-w-2xl mx-auto">For any inquiries, reach out to us at <a href="mailto:acrosspayments@gmail.com" class="text-blue-500 hover:underline">acrosspayments@gmail.com</a>.</p>
+      <h2 class="text-xl sm:text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-sm sm:text-lg max-w-2xl mx-auto">For any inquiries, reach out to us at <a href="mailto:acrosspayments@gmail.com" class="text-blue-500 hover:underline touch-manipulation">acrosspayments@gmail.com</a>.</p>
     </div>
   </section>
 
   <footer class="bg-gray-800 text-white py-6 mt-12">
     <div class="container mx-auto text-center">
-      <p>&copy; 2025 Across Escrow. All rights reserved.</p>
+      <p class="text-sm sm:text-base">&copy; 2023 Across Escrow. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- JavaScript for Dropdown Toggle -->
   <script src="script.js" defer></script>
 </body>
 </html>
