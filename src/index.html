@@ -6,103 +6,104 @@
   <title>Across - The Secure Way to Transact Online</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body class="font-sans text-gray-800">
   <!-- Header -->
   <header class="bg-gray-900 text-white py-4 sticky top-0 z-10">
     <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">A</div>
-        <span class="text-xl font-bold">Across</span>
-      </div>
-      <!-- Navigation -->
-      <div class="flex items-center space-x-4 sm:space-x-6 mt-2 sm:mt-0">
-        <a href="#solutions" class="text-gray-300 hover:text-white text-sm sm:text-base">Solutions</a>
-        <a href="#pricing" class="text-gray-300 hover:text-white text-sm sm:text-base">Pricing</a>
-        <a href="#about" class="text-gray-300 hover:text-white text-sm sm:text-base">About</a>
-        <!-- Buttons -->
-        <a href="#signup" class="text-gray-300 hover:text-white text-sm sm:text-base">Sign Up</a>
-        <a href="#login" class="bg-gray-800 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md hover:bg-gray-700 text-sm sm:text-base">Login</a>
+      <!-- Nav bar -->
+      <div class="flex items-center space-x-4">
+        <button class="flex items-center space-x-2 focus:outline-none" id="dropdownButton">
+          <span class="text-xl font-bold">Across</span>
+        </button>
+        <a href="contact.html" class="text-xl font-bold text-gray-300 hover:text-white">Contact Us</a>
       </div>
     </nav>
   </header>
 
-
-  
   <!-- Hero Section -->
   <section class="hero-gradient text-white py-16 sm:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <!-- Logo and Tagline -->
       <div class="flex flex-col items-center mb-6">
-        <div class="relative w-40 h-40 flex items-center justify-center mx-auto">
-          <svg width="160" height="160" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0">
-            <g>
-              <path d="M 100 20 A 80 80 0 1 1 180 100" stroke="white" stroke-width="3" fill="none" />
-              <path d="M 100 28 A 72 72 0 1 1 172 100" stroke="white" stroke-width="3" fill="none" transform="rotate(12 100 100)" />
-              <path d="M 100 36 A 64 64 0 1 1 164 100" stroke="white" stroke-width="3" fill="none" transform="rotate(24 100 100)" />
-              <path d="M 100 44 A 56 56 0 1 1 156 100" stroke="white" stroke-width="3" fill="none" transform="rotate(36 100 100)" />
-              <path d="M 100 52 A 48 48 0 1 1 148 100" stroke="white" stroke-width="3" fill="none" transform="rotate(48 100 100)" />
-              <path d="M 100 60 A 40 40 0 1 1 140 100" stroke="white" stroke-width="3" fill="none" transform="rotate(60 100 100)" />
-            </g>
-          </svg>
+        <div class="relative w-96 h-96 flex items-center justify-center mx-auto">
+          <img src="images/logo.png" alt="Across Logo" class="absolute inset-0 w-full h-full object-contain" />
           <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <span class="text-2xl sm:text-3xl font-bold">Across</span>
-            <span class="mt-2 text-xs sm:text-sm opacity-80">Safe Transactions Always</span>
+            <span class="text-6xl sm:text-7xl font-thin">Across</span>
+            <span class="mt-4 text-base sm:text-xl opacity-90">The Safer Middle</span>
           </div>
         </div>
       </div>
       <!-- Heading and Subheading -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">The secure way to<br>transact online</h1>
-      <p class="text-base sm:text-lg lg:text-xl mb-8 max-w-2xl mx-auto">Escrow made simple. Across protects buyers and sellers with safe, reliable transactions.</p>
-      <!-- CTA Button -->
-      <a href="#get-started" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 text-sm sm:text-base">Get Started</a>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium mb-4 leading-tight">The Secure Way To Transact Online</h1>
+      <br>
+      <br>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">Escrow made simple. <br> <br> Across protects buyers and sellers with safe, reliable transactions.</p>
     </div>
   </section>
 
   <!-- How It Works Section -->
-  <section class="py-16 bg-white">
+  <section class="py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">How It Works</h2>
-      <div class="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-y-0 sm:space-x-4">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-16">How It Works</h2>
+      <div class="flex flex-col sm:flex-row justify-center items-start gap-y-16 gap-x-2 max-w-6xl mx-auto">
         <!-- Step 1 -->
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10h6m-6-10h6M5 12h14"></path></svg>
-          </div>
-          <p class="text-sm sm:text-base font-medium">Create an escrow transaction</p>
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#222" class="w-12 h-12 mb-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 9.5l2.25 2.25a2.121 2.121 0 010 3l-3 3a2.121 2.121 0 01-3 0l-2.25-2.25m6-6l-2.25-2.25a2.121 2.121 0 00-3 0l-3 3a2.121 2.121 0 000 3l2.25 2.25m6-6l-6 6" />
+          </svg>
+          <p class="text-xl font-semibold mb-2 text-center">Create an Escrow Transaction</p>
+          <p class="text-sm text-gray-500 text-center">Buyer and Seller agree on terms and initiate the transaction on the platform.</p>
         </div>
+        <!-- Arrow 1 -->
+        <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 2 -->
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v2h6v-2c0-1.657-1.343-3-3-3zM9 11V9a3 3 0 016 0v2"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11h14v10H5z"></path></svg>
-          </div>
-          <p class="text-sm sm:text-base font-medium">Fund the escrow account</p>
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+          <img src="images/fund.png" alt="Fund the Escrow Account" class="w-12 h-12 mb-6 object-contain" />
+          <p class="text-xl font-semibold mb-2 text-center">Fund the Escrow Account</p>
+          <p class="text-sm text-gray-500 text-center">Buyer deposits the agreed amount into the secure escrow account.</p>
         </div>
+        <!-- Arrow 2 -->
+        <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 3 -->
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-          </div>
-          <p class="text-sm sm:text-base font-medium">Complete the transaction</p>
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+          <img src="images/goods.png" alt="Deliver Goods or Services" class="w-12 h-12 mb-6 object-contain" />
+          <p class="text-xl font-semibold mb-2 text-center">Deliver Goods or Services</p>
+          <p class="text-sm text-gray-500 text-center">Seller fulfills their part by delivering the product or service.</p>
         </div>
+        <!-- Arrow 3 -->
+        <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-6 self-center" />
         <!-- Step 4 -->
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l-9-5v6l9 5 9-5v-6l-9 5z"></path></svg>
-          </div>
-          <p class="text-sm sm:text-base font-medium">Release payment</p>
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+          <img src="images/complete.png" alt="Complete the Transaction" class="w-12 h-12 mb-6 object-contain" />
+          <p class="text-xl font-semibold mb-2 text-center">Complete the Transaction</p>
+          <p class="text-sm text-gray-500 text-center">Buyer reviews and confirms that everything meets the agreed terms.</p>
+        </div>
+        <!-- Arrow 4 -->
+        <img src="images/arrow.png" alt="Arrow" class="hidden sm:block w-10 h-10 mx-2 self-center" />
+        <!-- Step 5 -->
+        <div class="flex flex-col items-center flex-1 min-w-[180px] px-2 py-8">
+          <img src="images/payment.svg" alt="Release Payment" class="w-12 h-12 mb-6 object-contain" />
+          <p class="text-xl font-semibold mb-2 text-center">Release Payment</p>
+          <p class="text-sm text-gray-500 text-center">Funds are released to the seller once the buyer approves the delivery.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solutions Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Solutions for Secure Payments</h2>
-      <p class="text-base sm:text-lg max-w-2xl mx-auto">Whether you're an individual or a business, our escrow solution are tailored to meet your needs.</p>
+  <!-- Solutions & Coming Soon Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-32 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Solutions for Secure Payments</h2>
+      <p class="text-xl text-gray-700 mb-6 max-w-6xl mx-auto">
+        Whether you're an individual, business, or platform, our escrow solutions are tailored to meet your needs—offering secure, seamless transactions across a variety of use cases. We also support peer-to-peer exchanges, ensuring trust and safety for all parties involved.
+      </p>
+      <p class="text-lg text-gray-600 mb-6 max-w-6xl mx-auto">
+        <span class="font-semibold">Coming Soon:</span> Enhanced features and integrations to make your transactions even safer and more convenient.
+      </p>
+      <p class="text-lg text-gray-600 max-w-6xl mx-auto">
+        Want to incorporate our escrow services into your own platform or business? <span class="font-semibold">Inquire with us</span> to discuss custom integrations and partnerships.
+      </p>
     </div>
   </section>
 
@@ -130,11 +131,22 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-base sm:text-lg max-w-2xl mx-auto">For any inquiries, reach out to us at <a href="mailto:acrosspayments@gmail.com" class="text-blue-500 hover:underline">acrosspayments@gmail.com</a>.</p>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-sm sm:text-base">© 2025 Across. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Dropdown Toggle -->
+  <script src="script.js" defer></script>
 </body>
 </html>

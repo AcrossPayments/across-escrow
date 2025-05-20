@@ -1,4 +1,49 @@
 /* Custom gradient for hero section */
 .hero-gradient {
-  background: linear-gradient(135deg, #ff00e1 0%, #4c9aff 100%);
+  background: linear-gradient(90deg, #aa00c8 0%, #4103a5 50%, #0081bd 100%);
+}
+
+@font-face {
+  font-family: 'Avenir Next Variable Pro Roman';
+  src: url('./fonts/AvenirNextVariablePro-Roman.woff2') format('woff2'); /* Assuming the file name is this. Adjust if needed. */
+  font-weight: 400 900; /* Variable font weights from light to heavy */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Avenir Next Variable Pro Roman', 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next Variable Pro Roman', 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400; /* Set headings to non-bold */
+}
+
+nav, .nav, button, .btn, .font-medium {
+  font-family: 'Avenir Next Variable Pro Roman', 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400; /* Set nav and buttons to non-bold */
 }
