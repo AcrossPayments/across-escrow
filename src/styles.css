@@ -154,12 +154,12 @@ nav, .nav, button, .btn, .font-medium {
       rgba(255, 0, 242, 1) 100%
     );
     background-size: 300% 300%;
-    animation: gradient-animation 40s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: gradient-animation 4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   }
 
   .hero-gradient::before {
-    animation: gradient-animation 20s cubic-bezier(0.45, 0, 0.55, 1) infinite reverse;
-    opacity: 0.4; /* Increased shimmer effect for mobile */
+    animation: gradient-animation 3s cubic-bezier(0.45, 0, 0.55, 1) infinite reverse;
+    opacity: 0.4;
   }
 
   /* Optimize animations for mobile */
