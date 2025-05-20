@@ -24,7 +24,7 @@
     rgba(4, 116, 168, 0.85) 60%, /* #0474a8 - Ocean blue */
     rgba(96, 12, 174, 0.95) 80%, /* #4b0082 - Royal purple */
     rgba(164, 7, 255, 0.9) 90%, /* #2e1a47 - Dark amethyst */
-    rgba(255, 0, 242, 0.95) 100% /* Loop back to start */
+    rgba(255, 0, 140, 0.95) 100% /* Loop back to start */
   );
   background-size: 200% 200%; /* Compact size to keep three colors visible */
   animation: gradient-animation 15s cubic-bezier(0.45, 0, 0.55, 1) infinite; /* Fluid, premium timing */
@@ -143,12 +143,23 @@ nav, .nav, button, .btn, .font-medium {
 /* Mobile optimizations */
 @media (max-width: 640px) {
   .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 242, 1) 0%,
+      rgba(97, 0, 241, 1) 20%,
+      rgba(18, 92, 211, 1) 40%,
+      rgba(4, 116, 168, 1) 60%,
+      rgba(96, 12, 174, 1) 80%,
+      rgba(164, 7, 255, 1) 90%,
+      rgba(255, 0, 242, 1) 100%
+    );
     background-size: 300% 300%;
     animation: gradient-animation 40s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   }
 
   .hero-gradient::before {
     animation: gradient-animation 20s cubic-bezier(0.45, 0, 0.55, 1) infinite reverse;
+    opacity: 0.4; /* Increased shimmer effect for mobile */
   }
 
   /* Optimize animations for mobile */
